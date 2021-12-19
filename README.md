@@ -1,4 +1,4 @@
-This is a plain javascript no-server setup to read a set of token balances from any wallet based on etherium.
+This is a plain javascript to read a set of token balances from any wallet based on etherium.
 
 In order for this to work in your browser your browser must be able to function as an ETH-Node.
 
@@ -12,5 +12,10 @@ to other networks, i.e polygon, you will have to create a wallet with Metamask, 
 
 Once you have your browser set up to be a network host
 
-Run a server (I like using the http-server, which you run by running http-server in the root directory)
-Then visit index.html in localhost (usually this will be localhost:8080)
+Install the relevant npm modules by running
+`npm install`
+
+Once the modules are downloaded run `node app.js` to run the app.
+
+The app will be running on port 5000.
+Visit localhost:5000 in the configured browser.
