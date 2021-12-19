@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Efraim Dahl Diffuse Submission</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>-->
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" />
+
+    <!-- Google fonts <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" />-->
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    </nav>
+    <!-- Header-->
+    <header class="mainPage masthead d-flex align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1">Diffuse</h1>
+            <h3 class="mb-5"><em>Polygon Wallet Reader</em></h3>
+            <h3 class="mb-5"><em>by Efraim Dahl</em></h3>
+            <a class="btn btn-secundary btn-xl" href="#pay">
+                <h1>V</h1>
+            </a>
+        </div>
+    </header>
+    </section>
+    <!-- Call to Action-->
+    <section id="pay" class="content-section bg-primary text-white">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4">Click here to open your wallet</h2>
+            <div class="form-group">
+                <label for="inputSecretKey">Wallet ID</label>
+                <input class="form-control" id="walletID" aria-describedby="pkrhelp"
+                    placeholder="Enter Wallet ID" value="0x008062acA356B5F93F2F14b71Fd73db91A606d0C">
+                <small id="pkhelp" class="form-text text-muted">This is the wallet ID of a eth based wallet</small>
+            </div>
+            <button type="button" class="btn btn-secondary --bs_light" data-toggle="modal" data-target="#exampleModal">
+                Explore Wallet
+            </button>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">See Balance</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal"></button>
+                    <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputSecretKey">Select the token to check its balance</label>
+                            <div id="drop" class='row gx-0'>
+
+                            </div>
+                        </div>
+
+                        <h5 class="mx-auto lead" id="statusUpdate">Token Balance: unknown</h5>
+                        <h5 class="mx-auto lead" id="exchangeUpdate">Exchange value in DAI: unknown</h5>
+                        <div class="modal-footer">
+                    </form>
+                    <button type="button" id="close_button" class="btn btn-primary"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+
+    <footer class="footer text-center">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://github.com/efraimdahl"><i
+                            class="icon-social-github"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3"
+                        href="https://www.linkedin.com/in/efraim-dahl-629aba177/"><i
+                            class="icon-social-linkedin"></i></a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; PleaseHireMe</p>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <!--Include Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--bootstrap JS-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="js/token-list.js"></script>
+    <script type="module" src="js/main.js" nonce="r@nd0m"></script>
+</body>
+
+</html>
